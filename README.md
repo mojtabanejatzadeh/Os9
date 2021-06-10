@@ -13,14 +13,23 @@ gpasswd-r : رمز گروه را پاک میکنه
 
 2)
 
-.id -u -n : نمایش نام کاربری
-.id mojtaba : نمایش اطلاعات خواسته شده برای یوزر با آیدی mojtaba
+id -u -n : نمایش نام کاربری
+id mojtaba : نمایش اطلاعات خواسته شده برای یوزر با آیدی mojtaba
 
 3)
 
-.sudo useradd oslab
-.sudo passwd oslab
+sudo useradd oslab
+sudo passwd oslab
 
 4)
 
+-- sudo groupadd sadjad
+-- sudo groupadd Uni
+sudo usermod -G sadjad
+sudo usermod -G Uni
+sudo gpasswd -A oslab sadjad
 
+5)
+sudo useradd os2
+sudo gpasswd -a os2 sajjad
+sudo userdel os2
