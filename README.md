@@ -17,16 +17,19 @@ gpasswd-M : کاربر جدید اضافه میکند
 
 gpasswd-r : رمز گروه را پاک میکنه
 
+
 2)
 
 id -u -n : نمایش نام کاربری
 
 id mojtaba : نمایش اطلاعات خواسته شده برای یوزر با آیدی mojtaba
 
+
 3)
 
 --> sudo useradd oslab
 --> sudo passwd oslab
+
 
 4)
 
@@ -35,6 +38,7 @@ id mojtaba : نمایش اطلاعات خواسته شده برای یوزر ب�
 --> sudo usermod -G sadjad
 --> sudo usermod -G Uni
 --> sudo gpasswd -A oslab sadjad
+
 
 5)
 --> sudo useradd os2
